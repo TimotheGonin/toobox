@@ -13,13 +13,23 @@ class JeuxTable extends Component {
     console.log(`JeuxTable les jeux : ${props.jeux}`)
   }
   render(){
+    const filterText = this.props.filterText;
+    const inStockOnly = this.props.inStockOnly;
+
     const rows = [];
     this.props.jeux.forEach(jeu => {
       console.log(`jeu : ${jeu.name}`)
+      console.log(`entrée : ${filterText}`)
+      if(jeu.name.indexOf(filterText) === -1){
+        return
+      }
+      if(inStockOnly && !jeu.stocked){
+        return
+      }
       rows.push(<JeuxRow key={jeu.name} jeu={jeu}/>)
     });
     return(
-      <div style={{'backgroundColor' : 'violet'}}>
+      <div>
         <table>
           <thead>
             <tr>

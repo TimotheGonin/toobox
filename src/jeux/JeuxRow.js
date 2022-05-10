@@ -14,7 +14,7 @@ class JeuxRow extends Component {
     let name;
     this.props.jeu.stocked ? name=this.props.jeu.name : name = <span style={{'color':'red'}}>{this.props.jeu.name}</span> ;
     return(
-      <tr style={{'backgroundColor' : 'green'}}>
+      <tr>
         <td>{name}</td>
         <td>{this.props.jeu.price}</td>
       </tr>
