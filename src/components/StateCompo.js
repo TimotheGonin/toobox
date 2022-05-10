@@ -18,8 +18,9 @@ class StateCompo extends Component {
   // }
   handleChange = (e) => {
     const value = e.target.value;
-    console.log(`value : ${value}`)
+    console.log(`value dans STATECOMPO : ${value}`)
     this.setState({nom : value})
+    this.props.onInputChange(value);
   }
   render(){
     return(
