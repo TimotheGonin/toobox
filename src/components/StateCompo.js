@@ -9,7 +9,7 @@ import '../styles/StateCompo.css'
 class StateCompo extends Component {
   constructor(props){
     super(props);
-    console.log(`label : ${props.label}`);
+    // console.log(`label : ${props.label}`);
     this.state = {nom:''};
     // this.handleChange = this.handleChange.bind(this);
   }
