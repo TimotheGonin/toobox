@@ -12,7 +12,7 @@ class JeuxCategory extends Component {
   render(){
     return(
       <tr>
-        <th colSpan='2'>
+        <th colSpan='2' style={{'textDecoration':'underline'}}>
           {this.props.category}
         </th>
       </tr>

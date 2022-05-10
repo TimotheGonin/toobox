@@ -30,6 +30,8 @@ class App extends Component {
     JEUX.push({category: 'Aventure', price:'10€', stocked:true, name:'Tomb raider'});
     JEUX.push({category: 'Aventure', price:'30€', stocked:false, name:'Uncharted'});
     JEUX.push({category: 'Aventure', price:'50€', stocked:true, name:'Zelda'});
+    JEUX.push({category: 'RPG', price:'40€', stocked:true, name:'Wordl Of Warcart'});
+    JEUX.push({category: 'RPG', price:'30€', stocked:false, name:'Elder Scroll'});
     return (
       <div className="App">
         <header className="App-header">
