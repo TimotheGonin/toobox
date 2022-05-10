@@ -19,7 +19,7 @@ class App extends Component {
         <header className="App-header">
           <StateCompo label={'me'} onInputChange={this.onInputChange}/>
           <PureCompo />
-          <PureCompoProps label={this.state.stateApp} age={2022}/>
+          {this.state.stateApp ? <PureCompoProps label={this.state.stateApp} age={2022}/> : null}
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
