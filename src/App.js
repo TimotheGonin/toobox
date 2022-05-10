@@ -14,16 +14,23 @@ class App extends Component {
     this.setState({stateApp: val})
   }
   render(){
+    let mesLabel = [];
+    mesLabel.push("First")
+    mesLabel.push("Second")
+    mesLabel.push("Third")
+    mesLabel.push("Fourth")
     return (
       <div className="App">
         <header className="App-header">
 
           {/* START */}
-          <StateCompo label={'me'} onInputChange={this.onInputChange}/>
+          {mesLabel.map((libelle)=> (
+            <StateCompo key={libelle} label={libelle} onInputChange={this.onInputChange}/>
+          ))}
           <PureCompo />
           {this.state.stateApp ? <PureCompoProps label={this.state.stateApp} age={2022}/> : null}
           {/* END */}
-          
+
           <img src={logo} className="App-logo" alt="logo" />
         </header>
       </div>

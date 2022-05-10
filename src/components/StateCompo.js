@@ -25,7 +25,7 @@ class StateCompo extends Component {
   render(){
     return(
       <div>
-        <h6 className='state-h6'>Compo State</h6>
+        <h6 className='state-h6'>Compo {this.props.label}</h6>
         <input type="text" value={this.state.nom} onChange={this.handleChange}></input>
       </div>
     )
