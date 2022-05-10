@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import {PureCompo,PureCompoProps } from './components/PureCompo';
+import StateCompo from './components/StateCompo';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <StateCompo label={'me'}/>
         <PureCompo />
         <PureCompoProps label={"me"} age={2022}/>
         <img src={logo} className="App-logo" alt="logo" />
