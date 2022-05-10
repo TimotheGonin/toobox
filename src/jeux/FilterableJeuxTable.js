@@ -6,7 +6,7 @@
 import React, {Component} from 'react';
 import SearchCompo from './SearchCompo';
 import JeuxTable from './JeuxTable';
-import { toHaveDisplayValue } from '@testing-library/jest-dom/dist/matchers';
+// import { toHaveDisplayValue } from '@testing-library/jest-dom/dist/matchers';
 
 class FilterableJeuxTable extends Component {
   constructor(props){

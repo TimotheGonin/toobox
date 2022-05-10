@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-import {PureCompo,PureCompoProps } from './components/PureCompo';
+// import {PureCompo,PureCompoProps } from './components/PureCompo';
 import StateCompo from './components/StateCompo';
-import CompoCycleDeVie from './components/CompoCycleDeVie';
+// import CompoCycleDeVie from './components/CompoCycleDeVie';
 
 // JEUX
 import FilterableJeuxTable from './jeux/FilterableJeuxTable'
@@ -45,7 +45,7 @@ class App extends Component {
             <StateCompo key={libelle} label={libelle} onInputChange={this.onInputChange}/>
           ))}
           {/* <PureCompo /> */}
-          {this.state.stateApp ? <PureCompoProps label={this.state.stateApp} age={2022}/> : null}
+          {/* {this.state.stateApp ? <PureCompoProps label={this.state.stateApp} age={2022}/> : null} */}
           {/* END */}
 
           {/* <img src={logo} className="App-logo" alt="logo" /> */}

@@ -26,7 +26,7 @@ class JeuxTable extends Component {
         return
       }
       if(jeu.category!== lastCat){
-        rows.push(<JeuxCategory category={jeu.category}/>)
+        rows.push(<JeuxCategory key={jeu.category} category={jeu.category}/>)
       }
       rows.push(<JeuxRow key={jeu.name} jeu={jeu}/>)
       lastCat = jeu.category;
@@ -40,7 +40,9 @@ class JeuxTable extends Component {
               <th>Price</th>
             </tr>
           </thead>
-          {rows}
+          <tbody>
+            {rows} 
+          </tbody>
         </table>
       </div>
     )
