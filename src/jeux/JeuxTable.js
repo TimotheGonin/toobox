@@ -19,7 +19,7 @@ class JeuxTable extends Component {
 
     const rows = [];
     this.props.jeux.forEach(jeu => {
-      if(jeu.name.indexOf(filterText) === -1){
+      if(jeu.name.toLowerCase().indexOf(filterText) === -1){
         return
       }
       if(inStockOnly && !jeu.stocked){
